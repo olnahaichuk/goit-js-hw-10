@@ -2,8 +2,8 @@
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import imageUrl from '../img/close.png ';
-import imageUrl from '../img/success.png ';
+import closeImageUrl from '../img/close.png';
+import successImageUrl from '../img/success.png';
 
 const refs = {
   formEl: document.querySelector('.form'),
@@ -30,7 +30,7 @@ refs.formEl.addEventListener('submit', e => {
       iziToast.success({
         title: 'Success',
         message: ` Fulfilled promise in ${delay}ms`,
-        iconUrl: '../img/success.png',
+        iconUrl: successImageUrl,
         backgroundColor: '#59A10D',
         messageColor: '#fff',
         titleColor: '#fff',
@@ -40,7 +40,7 @@ refs.formEl.addEventListener('submit', e => {
       iziToast.error({
         message: `❌ Rejected promise in ${delay}ms`,
         backgroundColor: '#B51B1B',
-        iconUrl: '../img/close.png',
+        iconUrl: closeImageUrl,
         messageColor: '#fff',
         titleColor: '#fff',
       });
