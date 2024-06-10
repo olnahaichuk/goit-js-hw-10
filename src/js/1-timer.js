@@ -3,7 +3,7 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import closeImageUrl from '../img/close.png';
+import closeTimeImageUrl from '../img/close.png';
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time
@@ -52,7 +52,7 @@ const options = {
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
-        iconUrl: closeImageUrl,
+        iconUrl: closeTimeImageUrl,
         backgroundColor: '#B51B1B',
         messageColor: '#fff',
         titleColor: '#fff',
