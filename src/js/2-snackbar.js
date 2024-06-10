@@ -2,6 +2,8 @@
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import imageUrl from '../img/close.png ';
+import imageUrl from '../img/success.png ';
 
 const refs = {
   formEl: document.querySelector('.form'),

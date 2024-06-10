@@ -51,7 +51,7 @@ const options = {
       iziToast.error({
         title: 'Error',
         message: 'Please choose a date in the future',
-        iconUrl: '../img/Group.png',
+        iconUrl: '../img/close.png',
         backgroundColor: '#B51B1B',
         messageColor: '#fff',
         titleColor: '#fff',
