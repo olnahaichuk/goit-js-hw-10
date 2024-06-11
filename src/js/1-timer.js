@@ -82,6 +82,10 @@ btnStart.addEventListener('click', () => {
     refs.minutesEl.textContent = str[2];
     refs.secondsEl.textContent = str[3];
   }, 1000);
+
+  setTimeout(() => {
+    clearInterval(intervalId);
+  }, initTime - Date.now());
 });
 
 function addLeadingZero({ days, hours, minutes, seconds }) {
